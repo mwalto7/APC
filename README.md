@@ -2,6 +2,28 @@
 A command line tool to quickly configure access points connected to a
 wireless controller.
 
+## Install
+
+**Note:** must have `pip` and `virtualenv` installed.
+
+### Virtualenv
+`cd` to the project directory and run the following commands:
+```
+// Linux/OSX
+$ virtualenv venv
+$ . venv/bin/activate
+$ pip install --editable .
+
+// Windows
+$ virtaulenv venv
+$ \venv\scripts\activate
+$ pip install --editable .
+```
+You should now have `(venv)` displayed next to your terminal prompt.
+To verify everything is working, run `$ apc --help` to display the help
+message. Type `$ deactivate`  when done testing to deactivate the
+virtual environment.
+
 ## Usage
 `$ apc [OPTIONS] INPUT_FILE` <br>
 
