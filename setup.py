@@ -13,7 +13,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'apc=cli:cli',
+            'apc=apc.cli:cli',
         ],
     },
 )

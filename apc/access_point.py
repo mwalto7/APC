@@ -1,5 +1,6 @@
 import click
-from controller import Controller
+
+from apc.controller import Controller
 
 
 class AccessPoint:

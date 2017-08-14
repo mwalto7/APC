@@ -1,6 +1,6 @@
 import click
 
-import fileutil
+from apc import fileutil
 
 
 @click.argument('input_file', type=click.Path(exists=True))

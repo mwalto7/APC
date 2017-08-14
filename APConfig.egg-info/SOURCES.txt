@@ -1,4 +1,3 @@
-cli.py
 APConfig.egg-info/PKG-INFO
 APConfig.egg-info/SOURCES.txt
 APConfig.egg-info/dependency_links.txt

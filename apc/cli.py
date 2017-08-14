@@ -1,8 +1,10 @@
 import sys
+
 import click
-import fileutil
-from controller import Controller
-from access_point import AccessPoint
+from apc.access_point import AccessPoint
+from apc.controller import Controller
+
+from apc import fileutil
 
 
 @click.command()
