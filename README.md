@@ -12,12 +12,12 @@ wireless controller.
 // Linux/OSX
 $ virtualenv venv
 $ . venv/bin/activate
-$ pip install --editable .
+(venv) $ pip install --editable .
 
 // Windows
 $ virtaulenv venv
 $ \venv\scripts\activate
-$ pip install --editable .
+(venv) $ pip install --editable .
 ```
 You should now have `(venv)` displayed next to your terminal prompt.
 To verify everything is working, run `$ apc --help` to display the help
