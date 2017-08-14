@@ -1,6 +1,0 @@
-APConfig.egg-info/PKG-INFO
-APConfig.egg-info/SOURCES.txt
-APConfig.egg-info/dependency_links.txt
-APConfig.egg-info/entry_points.txt
-APConfig.egg-info/requires.txt
-APConfig.egg-info/top_level.txt
