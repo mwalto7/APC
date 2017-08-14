@@ -1,0 +1,5 @@
+Click
+netmiko
+openpyxl
+bcrypt
+pandas
