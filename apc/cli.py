@@ -49,7 +49,7 @@ def cli(input_file):
                         ap.rename(session)
                         ap.set_location(session)
                     else:
-                        click.secho(f'{ap} is not connected to {wlc}\n', fg='red', bold=True)
+                        click.secho(f'\n{ap} is not connected to {wlc}\n', fg='red', bold=True)
 
         # Configure primary controller
         if click.confirm('Do you want to configure the primary controller?', default=False):
