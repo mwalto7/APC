@@ -21,7 +21,7 @@ class AccessPoint:
         """
         self.mac = mac
         self.default_name = self.__set_default_name()
-        self.name = (self.default_name if name == 'nan' else name)
+        self.name = self.default_name if name == 'nan' else name
 
     def __set_default_name(self):
         """
