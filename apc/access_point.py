@@ -128,11 +128,11 @@ if __name__ == '__main__':
     wlc = Controller()
     with wlc.connection as session:
 
-        ap = AccessPoint(name='csc-TESTLAB-ap1140', mac='00:22:90:91:1c:df')
+        ap = AccessPoint(name='ap_name', mac='mac_addr')
         if ap.is_connected(wlc):
 
             click.echo(ap.rename(session))
-            click.echo(ap.set_primary_controller(session, 'CSC_TESTLAB_WLC', '10.4.112.11'))
+            click.echo(ap.set_primary_controller(session, 'controller', 'ip'))
 
             ap_group = click.prompt(click.style('Enter the AP group', bold=True), type=click.Choice(ap.groups))
             click.echo(ap.set_group(session, ap_group))
