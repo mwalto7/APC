@@ -9,15 +9,10 @@ wireless controller.
 ### Virtualenv
 `cd` to the project directory and run the following commands:
 ```
-// Linux/OSX
 $ virtualenv venv
 $ . venv/bin/activate
 (venv) $ pip install --editable .
 
-// Windows
-$ virtaulenv venv
-$ \venv\scripts\activate
-(venv) $ pip install --editable .
 ```
 You should now have `(venv)` displayed next to your terminal prompt.
 To verify everything is working, run `$ apc --help` to display the help
@@ -51,29 +46,21 @@ The default option for each command is false and is indicated by `N`.
 Simply press `enter` to skip a command or type `y` and hit `enter` to
 execute the command.
 
-*AP modes:* Local, bridge, flex+bridge, flexconnect, monitor, reap,
-rogue, se-connect, sniffer
-
-*AP groups:* default-group, ClearPass, MDNS_1, MDNS_2,
-RLAN_CSC_VLAN_101, high-density, lsu-default, mesh, radiustest, rftest
-
-*To exit the program at any time, type `^C` to abort the program.*
-
 ## Example
     $ apc test-aps.xlsx
-    Controller IP: 10.4.112.11
+    Controller IP: <ipaddr>
     Username: user
     Password: pass
 
-    Connecting to device 10.4.112.11...
-    Connection established to device 10.4.112.11
+    Connecting to device <ipaddr>...
+    Connection established to device <ipaddr>
 
     Do you want to rename the AP(s)? [y/N]: y
     Name/Location  [####################################]  100%
     Do you want to configure the primary controller? [y/N]: y
 
-    Primary controller name: CSC_TESTLAB_WLC
-    Primary controller IP: 10.4.112.11
+    Primary controller name: <wlc_name>
+    Primary controller IP: <ipaddr>
     Primary controller  [####################################]  100%
     Do you want to configure the AP mode? [y/N]: y
 
@@ -81,7 +68,7 @@ RLAN_CSC_VLAN_101, high-density, lsu-default, mesh, radiustest, rftest
     AP mode  [####################################]  100%
     Do you want to configure the AP group? [y/N]: y
 
-    Enter the AP group name: lsu-default
+    Enter the AP group name: default
     AP group  [####################################]  100%
 
     Configuration complete. Wait for APs to reboot.
